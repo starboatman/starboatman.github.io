@@ -6,13 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: 随笔 | 船夫的星河</title>
+  <title>hexo的文件结构 | 船夫的星河</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="船夫的星河">
-<meta property="og:url" content="http://example.com/tags/%E9%9A%8F%E7%AC%94/index.html">
+  <meta name="description" content="以下内容来源于网络，有错误请指正">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo的文件结构">
+<meta property="og:url" content="http://example.com/2022/09/01/hexo%E6%A1%86%E6%9E%B6%E7%90%86%E8%A7%A3/index.html">
 <meta property="og:site_name" content="船夫的星河">
+<meta property="og:description" content="以下内容来源于网络，有错误请指正">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-09-01T15:07:23.763Z">
+<meta property="article:modified_time" content="2022-09-01T15:20:12.206Z">
+<meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="船夫的星河" type="application/atom+xml">
@@ -163,35 +168,90 @@
           </div>
           <div id="js-content" class="content-ll">
             
+    <i class="fa fa-thumb-tack"></i>
+    <font color=7D26CD>置顶</font>
+    <span class="post-meta-divider">|</span>
   
+<article id="post-hexo框架理解" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/09/01/hexo%E6%A1%86%E6%9E%B6%E7%90%86%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2022-09-01T15:07:23.763Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/09/01/hexo%E6%A1%86%E6%9E%B6%E7%90%86%E8%A7%A3/">hexo的文件结构</a>
+    <h1 class="article-title" itemprop="name">
+      hexo的文件结构
     </h1>
   
 
-        <div class="article-info info-on-right">
+        
+        <a href="/2022/09/01/hexo%E6%A1%86%E6%9E%B6%E7%90%86%E8%A7%A3/" class="archive-article-date">
+  	<time datetime="2022-09-01T15:07:23.763Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><font size=5>以下内容来源于网络，有错误请指正</font></p>
+<span id="more"></span>
+
+
+
+<h2 id="deploy-git"><a href="#deploy-git" class="headerlink" title=".deploy_git"></a>.deploy_git</h2><p>将<code>public</code>文件夹的内容提交到<code>Github</code>后生成，<br>执行<code>hexo generate</code>，根据<code>source</code>，更新<code>public</code>。  执行<code>hexo deploy</code>，根据<code>public</code>，更新 <code>.deploy_git</code>。</p>
+<h2 id="github"><a href="#github" class="headerlink" title=".github"></a>.github</h2><h2 id="node-modules"><a href="#node-modules" class="headerlink" title="node_modules"></a>node_modules</h2><h2 id="public"><a href="#public" class="headerlink" title="public"></a>public</h2><h2 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h2><p>模板文件夹，包含page(页面)，post（文章），draft（草稿）三种模板。当你<code>hexo new &quot;标题名字&quot;</code>的时候，Hexo 会根据该文件夹下的对应文件进行初始化构建。</p>
+<h2 id="source"><a href="#source" class="headerlink" title="source"></a>source</h2><h2 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h2><p>主题文件夹，存储主题。每一个主题，都有一个单独的文件夹。默认主题为<code>landscape</code>，其它主题可以在<code>Github</code>上免费下载使用。<br>这里值得注意的是，<code>Hexo</code>配置文件中的<code>language**参数**</code>的值，取决于每个主题文件夹（如<code>landscape</code>）下的<code>language**文件夹**</code>里的文件名。<br> <code>yilia</code>主题可能不再维护，建议可以使用<code>butterfly</code>主题，或者<code>yilia</code>模板自己动手一个主题</p>
+<h2 id="npmignore"><a href="#npmignore" class="headerlink" title=".npmignore"></a>.npmignore</h2><h2 id="config-landscape-yml"><a href="#config-landscape-yml" class="headerlink" title="_config.landscape.yml"></a>_config.landscape.yml</h2><h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">_config.yml</a></h2><p>网站的全局配置文件，设置包括网站标题、副标题、作者、关键字和描述信息等</p>
+<h2 id="db-json"><a href="#db-json" class="headerlink" title="db.json"></a>db.json</h2><h2 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h2><h2 id="package-lock-json"><a href="#package-lock-json" class="headerlink" title="package-lock.json"></a>package-lock.json</h2>
+      
+      
+        
+          <div class="essayending">
+            <div>
+             <div style="text-align:center;color: #ccc;font-size:22px;">
+             <br/>
+             <br/>
+  -------------感谢阅读<i class="fa fa-paw"></i>希望能该你带来帮助-------------
+             <br/>
+             <br/>
+              <br/>
+              <br/>
+             </div>
+            </div>
+          </div>
           
+        
+   
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -203,19 +263,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://个人网站的网址/022/09/01/hexo%E6%A1%86%E6%9E%B6%E7%90%86%E8%A7%A3/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2022/08/30/%E6%80%8E%E6%A0%B7%E5%86%99%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">怎样写博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#deploy-git"><span class="toc-number">1.</span> <span class="toc-text">.deploy_git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github"><span class="toc-number">2.</span> <span class="toc-text">.github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#node-modules"><span class="toc-number">3.</span> <span class="toc-text">node_modules</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#public"><span class="toc-number">4.</span> <span class="toc-text">public</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#scaffolds"><span class="toc-number">5.</span> <span class="toc-text">scaffolds</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#source"><span class="toc-number">6.</span> <span class="toc-text">source</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#themes"><span class="toc-number">7.</span> <span class="toc-text">themes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#npmignore"><span class="toc-number">8.</span> <span class="toc-text">.npmignore</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#config-landscape-yml"><span class="toc-number">9.</span> <span class="toc-text">_config.landscape.yml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#config-yml"><span class="toc-number">10.</span> <span class="toc-text">_config.yml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#db-json"><span class="toc-number">11.</span> <span class="toc-text">db.json</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#package-json"><span class="toc-number">12.</span> <span class="toc-text">package.json</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#package-lock-json"><span class="toc-number">13.</span> <span class="toc-text">package-lock.json</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -238,9 +398,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
