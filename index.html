@@ -228,18 +228,325 @@
 
 
   
-    <article id="post-学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-JAVA期末作业" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>视频学习计划：</p>
-<ul>
-<li>coderwhy老师0  </li>
-<li>尚硅谷老师 html  29/148  </li>
-<li>java从入门到起飞1）33/170</li>
-<li> 西安电子科技大学 信号与系统  4/200</li>
+        <h1 id="课程复习大纲"><a href="#课程复习大纲" class="headerlink" title="课程复习大纲"></a><strong>课程复习大纲</strong></h1><h2 id="1-企业级应用系统开发常识"><a href="#1-企业级应用系统开发常识" class="headerlink" title="1. 企业级应用系统开发常识"></a><em><strong>1. 企业级应用系统开发常识</strong></em></h2><h3 id="企业级应用系统的开发流程："><a href="#企业级应用系统的开发流程：" class="headerlink" title="企业级应用系统的开发流程："></a>企业级应用系统的开发流程：</h3><ul>
+<li>可行性分析、需求分析、总体设计、详细设计、编码、测试、运维</li>
 </ul>
+<h3 id="Eclipse-和-Tomcat-如何联调。"><a href="#Eclipse-和-Tomcat-如何联调。" class="headerlink" title="Eclipse 和 Tomcat 如何联调。"></a>Eclipse 和 Tomcat 如何联调。</h3><ul>
+<li>打开Eclipse，单击“Window”菜单，选择最下方的“Preferences”。</li>
+<li>单击“Server”选项，选择下方的“Runtime Environments”。</li>
+<li>点击“Add”添加Tomcat。</li>
+<li>点击“Next”，选中自己安装的Tomcat路径。</li>
+<li>点击“Finish”完成。</li>
+</ul>
+<h3 id="按照-MVC-设计模式，JSP-Servlet-的项目中，哪个是-M（JavaBean）？哪个是-V（JSP）？哪个是-C（Servlet）？"><a href="#按照-MVC-设计模式，JSP-Servlet-的项目中，哪个是-M（JavaBean）？哪个是-V（JSP）？哪个是-C（Servlet）？" class="headerlink" title="按照 MVC 设计模式，JSP+Servlet 的项目中，哪个是 M（JavaBean）？哪个是 V（JSP）？哪个是 C（Servlet）？"></a>按照 MVC 设计模式，JSP+Servlet 的项目中，哪个是 M（JavaBean）？哪个是 V（JSP）？哪个是 C（Servlet）？</h3><ul>
+<li>M（JavaBean）</li>
+<li>V（JSP）</li>
+<li>C（Servlet）</li>
+</ul>
+<h3 id="常见的前端开发技术有哪些？后端开发技术有哪些？"><a href="#常见的前端开发技术有哪些？后端开发技术有哪些？" class="headerlink" title="常见的前端开发技术有哪些？后端开发技术有哪些？"></a>常见的前端开发技术有哪些？后端开发技术有哪些？</h3><ul>
+<li>前端：HTML CSS Javascript</li>
+<li>后端：Java Web基础（Servlet  JSP）</li>
+</ul>
+<h3 id="Tomcat-默认端口为-8080，MySQL-默认端口为-3306。"><a href="#Tomcat-默认端口为-8080，MySQL-默认端口为-3306。" class="headerlink" title="Tomcat 默认端口为 8080，MySQL 默认端口为 3306。"></a>Tomcat 默认端口为 8080，MySQL 默认端口为 3306。</h3><h3 id="常见文件后缀，html-文件（html）、css-文件（-cs）、javascript-文件（-js）、spring-的配置（-yml-or-Properties）文件。"><a href="#常见文件后缀，html-文件（html）、css-文件（-cs）、javascript-文件（-js）、spring-的配置（-yml-or-Properties）文件。" class="headerlink" title="常见文件后缀，html 文件（html）、css 文件（.cs）、javascript 文件（.js）、spring 的配置（.yml or Properties）文件。"></a>常见文件后缀，html 文件（html）、css 文件（.cs）、javascript 文件（.js）、spring 的配置（.yml or Properties）文件。</h3><h2 id="2、前端开发技术：HTML、CSS和Javascript"><a href="#2、前端开发技术：HTML、CSS和Javascript" class="headerlink" title="2、前端开发技术：HTML、CSS和Javascript"></a><em><strong>2、前端开发技术：HTML、CSS和Javascript</strong></em></h2><h3 id="HTML-常用标签的作用与用法："><a href="#HTML-常用标签的作用与用法：" class="headerlink" title="HTML 常用标签的作用与用法："></a>HTML 常用标签的作用与用法：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;h3&gt; to &lt;h6&gt; 标题</span><br><span class="line">&lt;hr&gt; 定义水平线</span><br><span class="line">&lt;span&gt;  定义文档中的节。(行内元素)</span><br><span class="line">&lt;div&gt; 定义文档中的节</span><br><span class="line">&lt;a&gt; 定义超文本链接</span><br><span class="line">&lt;input&gt; 规定用户可输入数据的输入字段</span><br><span class="line">&lt;form&gt;  定义了HTML文档的表单</span><br><span class="line">&lt;br&gt; 定义换行</span><br><span class="line">&lt;p&gt; 定义段落</span><br><span class="line">&lt;image&gt;  定义图像</span><br></pre></td></tr></table></figure>
+
+<p><code>&lt;form&gt;</code>标签的 method 属性的默认值为 get，action 属性表示提交表单时，向何处发送表单数据，class 属性表示使用的样式。<br> <code>&lt;image&gt;</code>标签的 src 属性表示图片路径。<br> <code>&lt;input&gt;</code>标签，type 为不同值时，表示不同的<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tags/att_input_type.asp">组件</a>  </p>
+<h3 id="CSS-的基本使用语法-background-color、color、font-size、text-align等。"><a href="#CSS-的基本使用语法-background-color、color、font-size、text-align等。" class="headerlink" title="CSS 的基本使用语法:background-color、color、font-size、text-align等。"></a>CSS 的基本使用语法:background-color、color、font-size、text-align等。</h3><h3 id="如何设置整个网页的背景色？"><a href="#如何设置整个网页的背景色？" class="headerlink" title="如何设置整个网页的背景色？"></a>如何设置整个网页的背景色？</h3><p>background-color  颜色<br>background-image  图像<br>background-repeat  设置图像不重复<br>background-attachment  属性指定背景图像是应该滚动还是固定的<br>background-position  开始位置</p>
+<h3 id="如何设置字体颜色？"><a href="#如何设置字体颜色？" class="headerlink" title="如何设置字体颜色？"></a>如何设置字体颜色？</h3><p><code>&lt;h1(or p) style=&quot;color:Tomato(颜色值);&quot;&gt;China（生效文字）&lt;/h1（结束）&gt;</code></p>
+<h3 id="如何设置字体大小？"><a href="#如何设置字体大小？" class="headerlink" title="如何设置字体大小？"></a>如何设置字体大小？</h3><p><code>font-size: 2.5em(跟em、百分比、或者px); /*40px/16=2.5em*/</code></p>
+<h3 id="CSS-的三种引入方式"><a href="#CSS-的三种引入方式" class="headerlink" title="CSS 的三种引入方式"></a>CSS 的三种引入<a target="_blank" rel="noopener" href="https://www.cnblogs.com/raind/p/8610796.html">方式</a></h3><ul>
+<li><p>行内引入：直接使用style进行css引入<br><code>&lt;h1 style=&quot;color:red;&quot;&gt;style属性的应用&lt;/h1&gt;</code></p>
+</li>
+<li><p>内部样式表：在head中添加style的属性  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;style <span class="built_in">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><br><span class="line">  h3&#123;color:red;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>外部样式：新建css样式文件，进行引入  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;link type=&quot;text/css&quot; rel=&quot;styleSheet&quot;  href=&quot;CSS文件路径&quot; /&gt;</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;@import url(&quot;css文件路径&quot;);&lt;/style&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="外部引入-css-文件、引入-js-文件的代码"><a href="#外部引入-css-文件、引入-js-文件的代码" class="headerlink" title="外部引入 css 文件、引入 js 文件的代码"></a>外部引入 css 文件、引入 js 文件的代码</h3><p><code>&lt;script type=＂text/javascript＂ src=＂jquery.js＂&gt;&lt;/script&gt;</code>  </p>
+<h3 id="常见-javascript-方法："><a href="#常见-javascript-方法：" class="headerlink" title="常见 javascript 方法："></a>常见 javascript 方法：</h3><ul>
+<li>alert(想要弹出一个警告框)、</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">function display_alert() &#123;</span><br><span class="line">alert(&quot;我是一个警告框！&quot;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>confirm (显示一个带有指定消息和 OK 及取消按钮的对话框)</li>
+</ul>
+<h2 id="3、Servlet和JSP"><a href="#3、Servlet和JSP" class="headerlink" title="3、Servlet和JSP"></a><strong>3、Servlet和JSP</strong></h2><h3 id="Servlet-的生命周期函数有哪些？"><a href="#Servlet-的生命周期函数有哪些？" class="headerlink" title="Servlet 的生命周期函数有哪些？"></a>Servlet 的生命周期函数有哪些？</h3><ul>
+<li>init()方法：初始化</li>
+<li>service()方法：处理客户端请求</li>
+<li>destroy()方法：销毁servlet</li>
+</ul>
+<h3 id="JSP-页面的-page-指令的常用属性有哪些？"><a href="#JSP-页面的-page-指令的常用属性有哪些？" class="headerlink" title="JSP 页面的 page 指令的常用属性有哪些？"></a>JSP 页面的 page 指令的常用属性有哪些？</h3><ul>
+<li>pageEncoding属性，该属性的值可以有很多，例如：utf-8、gbk、ISO-8859-1等。<code>&lt;%@page pageEncoding=&quot;utf-8&quot;%&gt;</code></li>
+<li>import属性，该属性是设置在jsp页面中的java代码的包的导入。<br><code>&lt;%@page import=&quot;java.util.Data&quot;%&gt;</code><br><code>&lt;%@page import=java.util.List%&gt;</code><br><code>&lt;%@page import=&quot;java.lang.Integer&quot;%&gt;</code></li>
+<li>contentType属性，该属性是设置当前jsp页面的显示的类型和编码格式。<br><code>&lt;%@page contentType=&quot;text/html; charset=utf-8&quot;%&gt;</code></li>
+<li>language属性，该属性是指定jsp页面中服务端的代码用什么语言(只支持Java)。<br><code>&lt;%@page language=&quot;java&quot;%&gt;</code></li>
+<li>session属性，该属性是设置当前jsp页面是否可以直接使用session会话对象，默认值为true。<br><code>&lt;%@page session=&quot;true&quot;%&gt;</code></li>
+<li>isErrorPage属性，该属性是设置当前jsp页面是否为错误处理页面。<br><code>&lt;%@page isErrorPage=&quot;true&quot;%&gt;</code></li>
+<li>errorPage属性，该属性是用来设置处理当前页面异常或者错误的页面，对应的异常处理页面isErrorPage的值必须为true。如果设置该属性，那么在web.xml文件中定义的任何错误处理页面都将被忽略，优先使用该属性定义的异常处理页面。<br><code>&lt;%@page errorPage=&quot;error/error1.jsp&quot;%&gt;</code></li>
+<li>isELIgnored属性，该属性表示是否忽略当前jsp页面中的el表达式。<br><code>&lt;%@page isELIgnored=&quot;false&quot;%&gt;</code><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45645403/article/details/112398665">等</a></li>
+</ul>
+<h3 id="JavaBean-的四个作用范围：page、request、session-和-application"><a href="#JavaBean-的四个作用范围：page、request、session-和-application" class="headerlink" title="JavaBean 的四个作用范围：page、request、session 和 application"></a>JavaBean 的四个作用范围：page、request、session 和 application</h3><h3 id="什么是-EL-表达式？EL-表达式的语法特点？EL-表达式有何作用？"><a href="#什么是-EL-表达式？EL-表达式的语法特点？EL-表达式有何作用？" class="headerlink" title="什么是 EL 表达式？EL 表达式的语法特点？EL 表达式有何作用？"></a>什么是 EL 表达式？EL 表达式的语法特点？EL 表达式有何作用？</h3><ul>
+<li>EL表达式语言是一种简单的语言，提供了在 JSP 中简化表达式的方法，目的是为了尽量</li>
+<li><strong>特点</strong>：<ul>
+<li>EL语法简单，方便</li>
+<li>EL可以与JSTL结合使用，也可以和JavaScript语句结合使用。</li>
+<li>EL可以自动转换类型。</li>
+<li>EL既可以访问一般的变量，也可以访问JavaBean中的属性和嵌套属性、集合对象。</li>
+<li>EL中可以执行算术运算、逻辑运算、关系运算和条件运算等。</li>
+<li>EL中可以获得命名空间（PageContext对象，他是页面中所有其他内置对象的最大范围的集成对象，通过它可以访问其他内置对象）。</li>
+<li>EL中在进行除法运算时，如果除数是0，则返回无穷大Infinity，而不返回错误。</li>
+<li>EL中可以访问JSP的作用域（request、session、application以及page）</li>
+<li>扩展函数可以与Java类的静态方法进行映射。</li>
+</ul>
+</li>
+<li><strong>作用</strong>：减少JSP页面中的Java代码，使得JSP页面的处理 程序 编写起来更加简洁，便于开发和维护。</li>
+</ul>
+<h3 id="配置-Servlet-的两种方式：web-xml-中配置和使用-WebServlet-注解。"><a href="#配置-Servlet-的两种方式：web-xml-中配置和使用-WebServlet-注解。" class="headerlink" title="配置 Servlet 的两种方式：web.xml 中配置和使用@WebServlet 注解。"></a>配置 Servlet 的两种方式：web.xml 中配置和使用@WebServlet 注解。</h3><h3 id="web-xml-中配置一个-servlet-的具体写法。"><a href="#web-xml-中配置一个-servlet-的具体写法。" class="headerlink" title="web.xml 中配置一个 servlet 的具体写法。"></a>web.xml 中配置一个 servlet 的具体写法。</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;servlet&gt;</span><br><span class="line">  &lt;servlet-name&gt;controlServlet&lt;/servlet-name&gt;</span><br><span class="line">  &lt;servlet-class&gt;com.xxx.ControlServlet&lt;/servlet-class&gt;</span><br><span class="line">&lt;/servlet&gt;</span><br><span class="line"></span><br><span class="line">&lt;servlet-mapping&gt;</span><br><span class="line">  &lt;servlet-name&gt;controlServlet&lt;/servlet-name&gt;</span><br><span class="line">  &lt;url-pattern&gt;*.html&lt;/url-pattern&gt;</span><br><span class="line">&lt;/servlet-mapping&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>定于servlet应用名字</li>
+<li>应用名字具体对应的servlet文件</li>
+<li>地址映射</li>
+<li>定义的servlet应用名字</li>
+<li>地址名</li>
+</ul>
+<h3 id="web-xml-文件所在位置，如何在-web-xml-配置网站的默认首页。"><a href="#web-xml-文件所在位置，如何在-web-xml-配置网站的默认首页。" class="headerlink" title="web.xml 文件所在位置，如何在 web.xml 配置网站的默认首页。"></a>web.xml 文件所在位置，如何在 web.xml 配置网站的默认首页。</h3><ul>
+<li><strong>位置</strong>：WebContent文件夹下的WEB-INF文件夹下</li>
+<li>在welcome标签中将默认首页放在首行位置</li>
+</ul>
+<h3 id="include-动作标签和-include-指令标签的区别？"><a href="#include-动作标签和-include-指令标签的区别？" class="headerlink" title="include 动作标签和 include 指令标签的区别？"></a>include 动作标签和 include 指令标签的区别？</h3><ul>
+<li>include指令在被导入页面时，会与原有的jsp代码完全融合，共同生成同一个Servlet；而include动作则会在原有的jsp代码使用include方<br>法而被导入页面，所以includ指令在执行时不需要编译，执行速度快，而includ动作在执行时需要编译，执行速度慢；</li>
+<li>include指令在被导入页面时，编译jsp会起作用，而include动作在编译到页面会失去作用，只是在原有的jsp代码中的<boby>标签生成页面的内容，故可以使用param动作来为被导入的页面传递参数；</li>
+<li>从jsp位置来看，include指令是通过file属性来指定被包含的文件，是放在jsp代码顶部，include动作放在<boby>标签来指定被包含的文件，可以通过page属性，所以支持jsp表达式，而file不支持任何表达式</li>
+</ul>
+<h3 id="Get-请求和-Post-请求的区别。"><a href="#Get-请求和-Post-请求的区别。" class="headerlink" title="Get 请求和 Post 请求的区别。"></a>Get 请求和 Post 请求的区别。</h3><ul>
+<li>get请求一般是去取获取数据（其实也可以提交，但常见的是获取数  据）；post请求一般是去提交数据。</li>
+<li>get因为参数会放在url中，所以隐私性，安全性较差，请求的数据长度是有限制的，不同的浏览器和服务器不同，一般限制在 2~8K 之间，更加常见的是 1k 以内；post请求是没有的长度限制，请求数据是放在body中；</li>
+<li>get请求刷新服务器或者回退没有影响，post请求回退时会重新提交数据请求。</li>
+<li>get请求可以被缓存，post请求不会被缓存。</li>
+<li>get请求会被保存在浏览器历史记录当中，post不会。get请求可以被收藏为书签，因为参数就是url中，但post不能。它的参数不在url中。</li>
+<li>get请求只能进行url编码（appliacation-x-www-form-urlencoded）,post请求支持多种（multipart/form-data等）。<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42931285/article/details/119852294">等</a></li>
+</ul>
+<h3 id="简述-JSP-的执行过程？"><a href="#简述-JSP-的执行过程？" class="headerlink" title="简述 JSP 的执行过程？"></a>简述 JSP 的执行过程？</h3><ul>
+<li>1）客户端发出请求。 </li>
+<li>2）Web容器将JSP转译成Servlet源代码。 </li>
+<li>3）Web容器将产生的源代码进行编译。</li>
+</ul>
+<h3 id="如何设置-cookie-在-1-个小时后过期？"><a href="#如何设置-cookie-在-1-个小时后过期？" class="headerlink" title="如何设置 cookie 在 1 个小时后过期？"></a>如何设置 cookie 在 1 个小时后过期？</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var millisecond = new Date().getTime();</span><br><span class="line">var expiresTime = new Date(millisecond + 60 * 1000 * 60);</span><br><span class="line">Cookies.set(&#x27;name&#x27;, &#x27;value&#x27;, &#123;</span><br><span class="line">expires: expiresTime,</span><br><span class="line">&#125;); </span><br></pre></td></tr></table></figure>
+<h3 id="在-JSP-中如何删除一个-cookie"><a href="#在-JSP-中如何删除一个-cookie" class="headerlink" title="在 JSP 中如何删除一个 cookie?"></a>在 JSP 中如何删除一个 cookie?</h3> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> &lt;%</span><br><span class="line"> Cookie killMyCookie = new Cookie(”mycookie”, null);</span><br><span class="line"> killMyCookie.setMaxAge(0);</span><br><span class="line">killMyCookie.setPath(”/”);</span><br><span class="line">response.addCookie(killMyCookie);</span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="JSP-商城登录程序（前端页面能读懂、后端代码能书写）"><a href="#JSP-商城登录程序（前端页面能读懂、后端代码能书写）" class="headerlink" title="JSP 商城登录程序（前端页面能读懂、后端代码能书写）"></a>JSP 商城登录程序（前端页面能读懂、后端代码能书写）</h3><h3 id="Web-项目的目录结构"><a href="#Web-项目的目录结构" class="headerlink" title="Web 项目的目录结构"></a>Web 项目的目录结构</h3><ul>
+<li>src：源码文件夹</li>
+<li>webContent：页面文件夹，可以放一些html、jsp页面。</li>
+<li>WEB-INF：存放一些插件文件。（因为这个文件浏览器不可访问）</li>
+<li>web.xml：web的配置文件。</li>
+<li>lib:放置项目所需要的架包</li>
+</ul>
+<h3 id="页面跳转的方式有两种：重定向和转发。这两者有何区别？"><a href="#页面跳转的方式有两种：重定向和转发。这两者有何区别？" class="headerlink" title="页面跳转的方式有两种：重定向和转发。这两者有何区别？"></a>页面跳转的方式有两种：重定向和转发。这两者有何区别？</h3><ul>
+<li>请求次数不同。重定向是浏览器向服务器发送一个请求并收到响应后再次向一个新地址发出请求，转发是服务器收到请求后为了完成响应跳转到一个新的地址；重定向至少请求两次，转发请求一次。</li>
+<li>地址栏不同。重定向地址栏会发生变化，转发地址栏不会发生变化。</li>
+<li>是否共享数据不同。重定向两次请求不共享数据，转发一次请求共享数据（在Request级别使用信息共享，使用重定向必然出错）。这就意味着，转发2次跳转之间传输的信息不会丢失，而重定向2次跳转之间传输的信息会丢失（Request范围）。</li>
+<li>跳转限制不同。重定向可以跳转到任意URL，转发只能跳转本站点资源。</li>
+<li>发生行为不同。重定向是客户端行为，转发是服务器端行为。</li>
+</ul>
+<h3 id="第三方-jar-文件如何放在-Web-项目中？"><a href="#第三方-jar-文件如何放在-Web-项目中？" class="headerlink" title="第三方 jar 文件如何放在 Web 项目中？"></a>第三方 jar 文件如何放在 Web 项目中？</h3><ul>
+<li>在文件夹lib中粘贴并添加路径即可在代码中引用</li>
+</ul>
+<h3 id="request对象的如何获取客户端的表单信息？"><a href="#request对象的如何获取客户端的表单信息？" class="headerlink" title="request对象的如何获取客户端的表单信息？"></a>request对象的如何获取客户端的表单信息？</h3><ul>
+<li>前端：<ul>
+<li>用户名(文本框)：<code>&lt;input type=&quot;text&quot; name=&quot;username&quot; value=&quot;请输入用户名&quot;&gt;</code></li>
+</ul>
+</li>
+<li>后端：<ul>
+<li>String username = request.getParameter(“username”);//获取填写的用户名</li>
+</ul>
+</li>
+</ul>
+<h3 id="自定义的-HttpServlet-子类的-doGet-和-doPost-方法特点？各自对应哪种前端请求？"><a href="#自定义的-HttpServlet-子类的-doGet-和-doPost-方法特点？各自对应哪种前端请求？" class="headerlink" title="自定义的 HttpServlet 子类的 doGet 和 doPost 方法特点？各自对应哪种前端请求？"></a>自定义的 HttpServlet 子类的 doGet 和 doPost 方法特点？各自对应哪种前端请求？</h3><ul>
+<li><strong>doget</strong><ul>
+<li>概念：GET调用用于获取服务器信息，并将其做为响应返回给客户端。当经由 Web浏览器或通过HTML、JSP直接访问Servlet的URL时，一般用GET调用。</li>
+<li>特点：<ul>
+<li>get生成方式有四种：1）直接在URL地址栏中输入URL。2）网页中的超链接。3）form中method为get。4）form中method为空时，默认是get提交。</li>
+<li>数据传送方式：表单数据存放在URL地址后面。所有get方式提交时HTTP中没有消息体。</li>
+<li>服务器获取数据方式：服务器采用request.QueryString来获取变量的值。</li>
+<li>传送的数据量：数据量长度有限制，一般不超过2kb。因为是参数传递，且在地址栏中，故数据量有限制。</li>
+<li>安全性：差，因为是直接将数据显示在地址栏中，浏览器有缓冲，可记录用户信息。所以安全性低。</li>
+<li>在用户刷新时：不会有任何提示</li>
+</ul>
+</li>
+<li>对应请求： http 协议中的 GET方法</li>
+</ul>
+</li>
+<li><strong>dopost</strong><ul>
+<li>概念：它用于客户端把数据传送到服务器端，是可以隐藏传送给服务器的任何数据。Post适合发送大量的数据。</li>
+<li>特点：<ul>
+<li>post生成方式：form中method属性为post。</li>
+<li>数据传送方式：表单数据存放在HTTP协议的消息体中以实体的方式传送到服务器。</li>
+<li>服务器获取数据方式：服务器采用request.Form来获取数据。</li>
+<li>传送的数据量：适合大规模的数据传送。因为是以实体的方式传送的。</li>
+<li>安全性：高。因为post方式提交数据时是采用的HTTP post机制，是将表单中的字段与值放置在HTTP HEADER内一起传送到ACTION所指的URL中，用户是看不见的。</li>
+<li>在用户刷新时：会弹出提示框，问用户是否重新提交</li>
+</ul>
+</li>
+<li>对应请求： http 协议中的POST方法</li>
+</ul>
+</li>
+</ul>
+<h3 id="中文乱码解决方案："><a href="#中文乱码解决方案：" class="headerlink" title="中文乱码解决方案："></a>中文乱码解决方案：</h3><p>设置客户端请求编码为 UTF-8：request.setCharacterEncoding(“utf-8”);<br>设置响应编码为 UTF-8 ：response.setContentType(“text/html;charset=utf-8”);</p>
+<h3 id="SP-中脚本语法：-lt-gt-、-lt-gt-、-lt-gt"><a href="#SP-中脚本语法：-lt-gt-、-lt-gt-、-lt-gt" class="headerlink" title="SP 中脚本语法：&lt;% %&gt;、&lt;%! %&gt;、&lt;%= %&gt;"></a>SP 中脚本语法：&lt;% %&gt;、&lt;%! %&gt;、&lt;%= %&gt;</h3><h3 id="JSP-的注释标签：-lt-–-–-gt"><a href="#JSP-的注释标签：-lt-–-–-gt" class="headerlink" title="JSP 的注释标签：&lt;%– –%&gt;"></a>JSP 的注释标签：&lt;%– –%&gt;</h3><h3 id="什么是-JSTL？"><a href="#什么是-JSTL？" class="headerlink" title="什么是 JSTL？"></a>什么是 JSTL？</h3><ul>
+<li>Java 中的一个定制标记库集  </li>
+</ul>
+<p><em><strong>4、SSM 框架</strong></em>  </p>
+<h3 id="什么是ORM？"><a href="#什么是ORM？" class="headerlink" title="什么是ORM？"></a>什么是ORM？</h3><ul>
+<li>orm全称：Object Relational Mapping即对象-关系映射，<br>关系数据库包装成为面向对象的模型，成为应用程序和数据库交互的桥梁<br>主要含有Hibernate MyBatis两个框架</li>
+</ul>
+<h3 id="MyBatis-中-和-的区别？"><a href="#MyBatis-中-和-的区别？" class="headerlink" title="MyBatis 中#{}和${}的区别？"></a>MyBatis 中#{}和${}的区别？</h3><ul>
+<li><code># &#123;&#125; 是预编译处理，像传进来的数据会加个&quot; &quot;（#将传入的数据都当成一个字符串，会对自动传入的数据加一个双引号）. $ &#123;&#125; 就是字符串替换。</code></li>
+</ul>
+<h3 id="MyBatis-编程步骤是什么样的？"><a href="#MyBatis-编程步骤是什么样的？" class="headerlink" title="MyBatis 编程步骤是什么样的？"></a>MyBatis 编程步骤是什么样的？</h3><ul>
+<li>读取配置文件和映射文件</li>
+<li>根据映射和配置文件创建SqlSessionFactory 会话工厂</li>
+<li>通过SqlSessionFactory 创建Mybatis的核心类对象SqlSession</li>
+<li>通过sqlsession执行数据库操作</li>
+<li>调用session.commit()提交事务</li>
+<li>调用session.close()关闭会话</li>
+</ul>
+<h3 id="Spring-框架的优点有哪些？"><a href="#Spring-框架的优点有哪些？" class="headerlink" title="Spring 框架的优点有哪些？"></a>Spring 框架的优点有哪些？</h3><ul>
+<li>降低耦合度，方便开发  </li>
+<li>支持AOP编程</li>
+<li>支持声明式事务</li>
+<li>方便程序测试</li>
+<li>方便继承各种优秀框架</li>
+<li>降低Java EE API的使用难度</li>
+</ul>
+<h3 id="什么是IOC？"><a href="#什么是IOC？" class="headerlink" title="什么是IOC？"></a>什么是IOC？</h3><ul>
+<li>控制反转，将对象的控制权由程序代码发转给外部容器</li>
+</ul>
+<h3 id="Spring-AOP-的通知有哪些类型？"><a href="#Spring-AOP-的通知有哪些类型？" class="headerlink" title="Spring AOP 的通知有哪些类型？"></a>Spring AOP 的通知有哪些类型？</h3><ul>
+<li>前置通知(before):在目标方法被调用之前调用通知</li>
+<li>后置通知(after): 在目标方法被调用之后调用通知</li>
+<li>返回通知(after-returning):在目标方法成功执行之后调用通知</li>
+<li>异常通知(after-throwing):在目标方法抛出异常之后调用通知</li>
+<li>环绕通知(around):通知包裹了被通知的方法，在被通知的方法调用前和调用后执行自定义的行为</li>
+</ul>
+<h3 id="SSM-集成时，需要在-web-xml-中做哪些配置？其他的配置文件，需要如何配置？认真理解配置文件各部分配置的含义和作用。"><a href="#SSM-集成时，需要在-web-xml-中做哪些配置？其他的配置文件，需要如何配置？认真理解配置文件各部分配置的含义和作用。" class="headerlink" title="SSM 集成时，需要在 web.xml 中做哪些配置？其他的配置文件，需要如何配置？认真理解配置文件各部分配置的含义和作用。"></a>SSM 集成时，需要在 web.xml 中做哪些配置？其他的配置文件，需要如何配置？认真理解配置文件各部分配置的含义和作用。</h3><ul>
+<li>xml：配置spring和springmvc的代码，以及设置编码格式和初始界面路径</li>
+<li>配置spring：设置数据库连接信息，数据库连接池对象，以及mybatis的扫描信息</li>
+<li>配置spring mvc：设置扫描的控制器类以及上传文件的大小</li>
+</ul>
+<h3 id="Spring-MVC-中的-ModelAndView-类做什么用的？"><a href="#Spring-MVC-中的-ModelAndView-类做什么用的？" class="headerlink" title="Spring MVC 中的 ModelAndView 类做什么用的？"></a>Spring MVC 中的 ModelAndView 类做什么用的？</h3><ul>
+<li>返回到指定页面，返回参数带指定页面的request作用域中</li>
+</ul>
+<h3 id="简述-Spring-MVC-的工作原理。"><a href="#简述-Spring-MVC-的工作原理。" class="headerlink" title="简述 Spring MVC 的工作原理。"></a>简述 Spring MVC 的工作原理。</h3><ul>
+<li>客户端发送请求—-前端控制器接受客户端请求DispatcherServlet—-找到处理器映射HandlerMapping—-找到处理器Handler—-处理器返回一个模型视图ModelAndView—-视图解析器进行解析—-返回一个视图对象—-前端控制器的得到视图对象—-显示给<a target="_blank" rel="noopener" href="https://blog.csdn.net/liang194237/article/details/81250780">用户</a></li>
+</ul>
+<ol>
+<li>Tomcat在启动时加载解析web.xml,找到spring mvc的前端总控制器DispatcherServlet,并且通过DispatcherServlet来加载相关的配置文件信息。</li>
+<li>DispatcherServlet接收到客户端请求，找到对应HandlerMapping，根据映射规则，找到对应的处理器（Handler）。</li>
+<li>调用相应处理器中的处理方法，处理该请求后，会返回一个ModelAndView。</li>
+<li>DispatcherServlet根据得到的ModelAndView中的视图对象，找到一个合适的ViewResolver（视图解析器），根据视图解析器的配置，DispatcherServlet将要显示的数据传给对应的视图，最后显示给用户。</li>
+</ol>
+<h3 id="SSM-商城登录程序（前端页面能读懂、后端代码能书写）"><a href="#SSM-商城登录程序（前端页面能读懂、后端代码能书写）" class="headerlink" title="SSM 商城登录程序（前端页面能读懂、后端代码能书写）"></a>SSM 商城登录程序（前端页面能读懂、后端代码能书写）</h3><ul>
+<li><p>能根据 ServiceImpl 类代码推演出 Service 接口代码</p>
+<h3 id="数据库连接池的作用"><a href="#数据库连接池的作用" class="headerlink" title="数据库连接池的作用"></a>数据库连接池的作用</h3><ul>
+<li>连接池是将已经创建好的连接保存在池中，当有请求来时，直接使用已经创建好的连接对数据库进行访问</li>
+</ul>
+<h3 id="Spring-框架中的两大核心思想是什么？-什么是-AOP？Spring-的-AOP-起什么作用？"><a href="#Spring-框架中的两大核心思想是什么？-什么是-AOP？Spring-的-AOP-起什么作用？" class="headerlink" title="Spring 框架中的两大核心思想是什么？ 什么是 AOP？Spring 的 AOP 起什么作用？"></a>Spring 框架中的两大核心思想是什么？ 什么是 AOP？Spring 的 AOP 起什么作用？</h3><ul>
+<li>思想：IOC和AOP</li>
+<li>概念：面向切面编程，将程序中的相同业务逻辑进行横向隔离，将重复的的业务逻辑抽取到一个模块中</li>
+<li>作用：提高程序的可复用性和开发效率</li>
+</ul>
+<h3 id="Autowired-注解的含义和作用"><a href="#Autowired-注解的含义和作用" class="headerlink" title="@Autowired 注解的含义和作用"></a>@Autowired 注解的含义和作用</h3><ul>
+<li>含义：将 Spring 容器中的 bean 自动的和我们需要这个 bean 的类组装在一起。.</li>
+<li>作用：对类成员变量、方法及构造函数进行标注，让 spring 完成 bean 自动装配的工作。</li>
+</ul>
+<h3 id="Controller、-Service、-Component-注解的含义和作用"><a href="#Controller、-Service、-Component-注解的含义和作用" class="headerlink" title="@Controller、@Service、@Component 注解的含义和作用"></a>@Controller、@Service、@Component 注解的含义和作用</h3><ul>
+<li>作用把普通pojo实例化到spring容器中，相当于之前xml配置文件中的<code>&lt;bean id=&quot;&quot; class=&quot;&quot;/&gt; </code></li>
+<li>@Controller：指定一个控制组件Bean，</li>
+<li>@Service：指定一个业务逻辑组件Bean，</li>
+<li>@Component：指定一个普通的Bean</li>
+</ul>
+<h3 id="Spring-MVC-中的-RequestParam-和-PathVariable-注解的作用。"><a href="#Spring-MVC-中的-RequestParam-和-PathVariable-注解的作用。" class="headerlink" title="Spring MVC 中的@RequestParam 和@PathVariable 注解的作用。"></a>Spring MVC 中的@RequestParam 和@PathVariable 注解的作用。</h3><ul>
+<li>获取请求参数的值，可以将请求参数赋值给方法中的形参，进而完成请求参数的处理。</li>
+<li>获取URL中的动态参数，支持动态url访问，并可以将请求中的动态参数映射到功能处理方法的形参上。</li>
+</ul>
+<h3 id="理解经典的-SSM-项目中，Controller、Service、Service-实现类、Dao-等代码之间的调用关系以及各自代码书写特点。"><a href="#理解经典的-SSM-项目中，Controller、Service、Service-实现类、Dao-等代码之间的调用关系以及各自代码书写特点。" class="headerlink" title="理解经典的 SSM 项目中，Controller、Service、Service 实现类、Dao 等代码之间的调用关系以及各自代码书写特点。"></a>理解经典的 SSM 项目中，Controller、Service、Service 实现类、Dao 等代码之间的调用关系以及各自代码书写特点。</h3><ul>
+<li>调用关系：dao属于持久层，负责数据库交互；在spring的xml配置文件中配置文件即可调用DAO层的jdbc.properties数据源配置，以及有 关数据库连接的参数都在Spring的配置文件中进行配置</li>
+<li>service属于spring层，主要负责业务模块的逻辑应用设计；设计完接口之后，在xml文件配置spring的配置实现关联，再调用dao层以定义的接口实现service显示类</li>
+<li>controller：主要负责具体的业务模块流程控制，通过调用service层的接口来进行控制业务流程。</li>
+<li>Service层是建立在DAO层之上的，在Controller层之下。因而Service层应该既调用DAO层的接口，又提供接口给Controller层的类来进行调用，它处于一个中间层的位置。每个模型都有一个Service接口，每个接口分别封装各自的业务处理方法。</li>
+<li> 实现一个功能模块：</li>
+</ul>
+<ol>
+<li>先写实体类entity，定义对象的属性，（可以参照数据库中表的字段来设置，数据库设计应该在所有编码开始之前）。</li>
+<li>写Mapper.xml（Mybatis），其中定义你的功能，对应要对数据库进行的那些操作，比如 insert、selectAll、selectByKey、delete、update等。</li>
+<li>写Mapper.java/Dao.java，将Mapper.xml中的操作按照id映射成Java函数。实际上就是Dao接口，二者选一即可。</li>
+<li>写Service.java，为控制层提供服务，接受控制层的参数，完成相应的功能，并返回给控制层。</li>
+<li>写Controller.java，连接页面请求和服务层，获取页面请求的参数，通过自动装配，映射不同的URL到相应的处理函数，并获取参数，对参数进行处理，之后传给服务层。</li>
+<li>写JSP页面调用，请求哪些参数，需要获取什么数据。</li>
+</ol>
+</li>
+</ul>
+<h2 id="5、eclipse-工具"><a href="#5、eclipse-工具" class="headerlink" title="5、eclipse  工具"></a><em><strong>5、eclipse  工具</strong></em></h2><h3 id="格式化代码快捷键：Ctrl-Shift-F"><a href="#格式化代码快捷键：Ctrl-Shift-F" class="headerlink" title="格式化代码快捷键：Ctrl+Shift+F"></a>格式化代码快捷键：Ctrl+Shift+F</h3><h3 id="调试-web-工程项目的方式：run-on-server"><a href="#调试-web-工程项目的方式：run-on-server" class="headerlink" title="调试 web 工程项目的方式：run on server"></a>调试 web 工程项目的方式：run on server</h3><ul>
+<li>调试普通 javase 项目的方式：java application  </li>
+</ul>
+<h3 id="生成-getter-和-setter-代码。"><a href="#生成-getter-和-setter-代码。" class="headerlink" title="生成 getter 和 setter 代码。"></a>生成 getter 和 setter 代码。</h3><ul>
+<li>在package browser（包浏览器）中右键单击java文件，选择sources（源代码），再选择Generate getter and setter(生成getter和setter方法），在弹出的对话框里选择要自动生成的属性，通常选择select all（全部选择），最后点OK就可以了。</li>
+</ul>
+<h3 id="生成接口实现方法代码。"><a href="#生成接口实现方法代码。" class="headerlink" title="生成接口实现方法代码。"></a>生成接口实现方法代码。</h3><ul>
+<li>编写代码写一个接口userdao如下：<br><code>public interface userdao extends basedao&lt;user&gt; &#123;public    List&lt;user&gt; finduserbyaccountandid(String id, String account);</code>  </li>
+<li>将鼠标放在userdao位置上 ，按快捷键<code>ctrl+t</code>(Quick Type Hierarchy快捷键)<br><code>public interface userdao extends basedao&lt;user&gt; &#123;public    List&lt;user&gt; finduserbyaccountandid(String id, String account);&#125;&#125;</code></li>
+<li>此时点击<code>userdaoimpl</code>就能快速生成接口现实类 ！</li>
+</ul>
+
+      
+      
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-搜书吧破解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>下载链接<br><a target="_blank" rel="noopener" href="https://skyroad.downallbook.com/forum.php?mod=attachment&amp;aid=">https://skyroad.downallbook.com/forum.php?mod=attachment&amp;aid=</a></p>
+<p><a target="_blank" rel="noopener" href="https://skyroad.downallbook.com/plugin.php?id=invite_aboc:jump&amp;fromuid=1995154&amp;tid=305681">https://skyroad.downallbook.com/plugin.php?id=invite_aboc:jump&amp;fromuid=1995154&amp;tid=305681</a><br><a target="_blank" rel="noopener" href="https://skyroad.downallbook.com/plugin.php?id=invite_aboc:jump&amp;fromuid=1995154&amp;tid=771046">https://skyroad.downallbook.com/plugin.php?id=invite_aboc:jump&amp;fromuid=1995154&amp;tid=771046</a><br><a target="_blank" rel="noopener" href="https://skyroad.downallbook.com/plugin.php?id=invite_aboc:jump&amp;fromuid=1995154&amp;tid=582702">https://skyroad.downallbook.com/plugin.php?id=invite_aboc:jump&amp;fromuid=1995154&amp;tid=582702</a><br>搜书吧暂时下载链接：<br>mod=attachment&amp;aid=M jQ1O TI 0Mnw3MWMxZjY1ZXwxNjY5NjQxOTg2fDE5OTUxNTR8NzcxMDQ2<br>mod=attachment&amp;aid=MTE 0MTE4MXxlMDYxNmU5MHwxNjY5NjQzOTc4fDE5OTUxNTR8MzA1Njgx<br>2459242(aid)|71c1f65e| 1669641986 （value）|1995154(本人的i的数字)|771046(分享给好友的tid后的数字)<br>1141181|       e0616e90|1669643978|1995154(本人的i的数字)|305681(分享给好友的tid后的数字)<br>aid获取：页面按下f12，之后将鼠标点到下载蓝色框内，在元素中即可获得<br>value获取：页面查看源代码，再点击附件文件名添加到帖子内容中上面的那个input标签中的value值<br>base64位加密＋？？？</p>
+<p>难点：缺失一个加密方式<br>未测试换账号之后可不可以使用<br>思路：</p>
 
       
       
@@ -285,7 +592,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/09/23/%E5%8D%9A%E5%AE%A2/">博客完善计划</a>
+      <a class="article-title" href="/2022/09/23/%E5%8D%9A%E5%AE%A2/">博客优化计划</a>
     </h1>
   
 
@@ -567,7 +874,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><font size=5>以下内容来源于网络，有错误请指正</font></p>
+        这是自己的小tips
         
       
       
@@ -839,11 +1146,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">参考</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">参考</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">

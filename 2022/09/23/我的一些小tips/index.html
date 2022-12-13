@@ -16,7 +16,7 @@
 <meta property="og:description" content="以下内容来源于网络，有错误请指正">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-09-23T15:06:41.973Z">
-<meta property="article:modified_time" content="2022-09-27T14:31:10.616Z">
+<meta property="article:modified_time" content="2022-11-30T12:38:48.090Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="船夫的星河" type="application/atom+xml">
@@ -187,12 +187,30 @@
 <li>两个m4s文件自行修改，如果报错Invalid data found when processing input</li>
 <li>打开两个m4s文件，删除0，保存之后再次输入</li>
 </ol>
-<h2 id="一些不好的网址视频下载"><a href="#一些不好的网址视频下载" class="headerlink" title="一些不好的网址视频下载"></a>一些不好的网址视频下载</h2><h3 id="1-先进入所需下载视频，使用猫抓-抓取m3u8文件并进行解析，得到文件名称之后可以进行m3u8文件名称更改："><a href="#1-先进入所需下载视频，使用猫抓-抓取m3u8文件并进行解析，得到文件名称之后可以进行m3u8文件名称更改：" class="headerlink" title="1. 先进入所需下载视频，使用猫抓 抓取m3u8文件并进行解析，得到文件名称之后可以进行m3u8文件名称更改："></a>1. 先进入所需下载视频，使用猫抓 抓取m3u8文件并进行解析，得到文件名称之后可以进行m3u8文件名称更改：</h3><p>将下载地址中m3u8前面的内容换为真实连接即出去顺序下载号之外内容：例如<br><code>https://test.aofahairextension.com/hjstore/video/20220705/638c9533f7a948a46c0a1dfe6e201ff8/2312499IqSn3xNx_i.m3u8</code><br>链接ts下载文件地址为<code>https://ts.foresthomeland.com/hjstore/video/20220705/638c9533f7a948a46c0a1dfe6e201ff8/2312499IqSn3xNx_i0.ts</code><br>下载完ts文件，通过解析的猫抓，下载key文件，并将它们放置在一起（或者在m3u8文件中找到key文件下载地址并补全）<br>例如<code>enc_2312499.key  </code><br>补全为<code>https://test.aofahairextension.com/hjstore/video/20220705/638c9533f7a948a46c0a1dfe6e201ff8/enc_2312499.key</code></p>
+<h2 id="一些不好的网址视频下载"><a href="#一些不好的网址视频下载" class="headerlink" title="一些不好的网址视频下载"></a>一些不好的网址视频下载</h2><h3 id="1-先进入所需下载视频，使用猫抓-抓取m3u8文件并进行解析，得到文件名称之后可以进行m3u8文件名称更改："><a href="#1-先进入所需下载视频，使用猫抓-抓取m3u8文件并进行解析，得到文件名称之后可以进行m3u8文件名称更改：" class="headerlink" title="1. 先进入所需下载视频，使用猫抓 抓取m3u8文件并进行解析，得到文件名称之后可以进行m3u8文件名称更改："></a>1. 先进入所需下载视频，使用猫抓 抓取m3u8文件并进行解析，得到文件名称之后可以进行m3u8文件名称更改：</h3><p>将下载地址中m3u8前面的内容换为真实连接即出去顺序下载号之外内容：<br>未破解初始链接：<a target="_blank" rel="noopener" href="https://test.aofahairextension.com/hjstore/video/20221006/118d4e7b3bb7e14ee6a0d99db93f1309/96794_i_preview.m3u8">https://test.aofahairextension.com/hjstore/video/20221006/118d4e7b3bb7e14ee6a0d99db93f1309/96794_i_preview.m3u8</a><br>ts文件链接     <a target="_blank" rel="noopener" href="https://hjvdo.139592.com/hjstore/video/20221006/118d4e7b3bb7e14ee6a0d99db93f1309/3229591GA1yMj0x_i0.ts">https://hjvdo.139592.com/hjstore/video/20221006/118d4e7b3bb7e14ee6a0d99db93f1309/3229591GA1yMj0x_i0.ts</a><br>破解后的真实地址：<a target="_blank" rel="noopener" href="https://test.aofahairextension.com/hjstore/video/20221006/118d4e7b3bb7e14ee6a0d99db93f1309/3229591GA1yMj0x_i.m3u8">https://test.aofahairextension.com/hjstore/video/20221006/118d4e7b3bb7e14ee6a0d99db93f1309/3229591GA1yMj0x_i.m3u8</a><br>在真实的m3u8文件中选择ts文件下载地址<br>下载完ts文件，通过解析的猫抓，下载key文件，并将它们放置在一起（或者在m3u8文件中找到key文件下载地址并补全）<br>例如<code>enc_2312499.key  </code><br>补全为<code>https://test.aofahairextension.com/hjstore/video/20220705/638c9533f7a948a46c0a1dfe6e201ff8/enc_2312499.key</code></p>
 <h3 id="2-cmd-输入以下代码："><a href="#2-cmd-输入以下代码：" class="headerlink" title="2. cmd 输入以下代码："></a>2. cmd 输入以下代码：</h3><ul>
 <li>未下载ts文件<code>ffmpeg -protocol_whitelist &quot;file,https,crypto,tls,tcp&quot; -i 2578525UUyGLKdL_i.m3u8 -c copy out.mp4</code> </li>
-<li>下载完ts文件的话进行以下修改：<br>将下载好的所有的 ts 文件、m3u8、key.key 放到一个文件夹中，将 m3u8 文件改名为 index.m3u8，将 key.key 改名为 key.m3u8 。<br>更改 index.m3u8 里的 URL，变为你本地路径的 key 文件，将所有 ts 也改为你本地的路径  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#EXT-X-KEY:METHOD=AES-128,URI=&quot;D:/Administrator/ts/key.m3u8&quot;</span><br><span class="line">#EXTINF:12.5,</span><br><span class="line">e:/20180125/GBDYO3576000.ts</span><br><span class="line">#EXTINF:12.5,</span><br><span class="line">e:/20180125/GBDYO3576001.ts</span><br><span class="line">#EXTINF:12.5,</span><br><span class="line">e:/20180125/GBDYO3576002.ts</span><br></pre></td></tr></table></figure>
-最后输入代码：ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy new.mp4</li>
+<li>下载完ts文件的话进行以下修改：<br>将下载好的所有的 ts 文件、m3u8、key.key 放到一个文件夹中，将 m3u8 文件改名为 index.m3u8，将 key.key 改名为 key.m3u8 。<br>更改 index.m3u8 里的 URL，变为你本地路径的 key 文件，将所有 ts 也改为你本地的路径<br>key文件可以不用修改 直接放到指定地址即可  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#EXT-X-KEY:METHOD=AES-128,URI=&quot;D:/Administrator/ts/key.m3u8&quot;</span><br><span class="line">#EXTINF:12.5,</span><br><span class="line">e:/20180125/GBDYO3576000.ts</span><br><span class="line">#EXTINF:12.5,</span><br><span class="line">e:/20180125/GBDYO3576001.ts</span><br><span class="line">#EXTINF:12.5,</span><br><span class="line">e:/20180125/GBDYO3576002.ts</span><br></pre></td></tr></table></figure>
+最后输入代码：ffmpeg -allowed_extensions ALL -i index.m3u8 -c copy 4.mp4<h2 id="图片动漫化"><a href="#图片动漫化" class="headerlink" title="图片动漫化"></a>图片动漫化</h2></li>
 </ul>
+<ol>
+<li>转换照片为智能对象</li>
+<li>图像像素调为300 px；尺寸为1500-2000 px</li>
+<li>复制图层-过滤器-液化- 放大眼睛；微笑：下巴缩短等</li>
+<li>滤镜-海报边缘-0；0；2</li>
+<li>Usm锐化-90；5；10</li>
+<li>油画-4 3 0.1 0 取消选中闪电</li>
+<li>usm锐化-60；5；5</li>
+<li>复制原图层，置顶，按住option把液化过滤器粘贴</li>
+<li>海报边缘：0，3，6</li>
+<li>油漆，之前的设置</li>
+<li>混合模式改为叠加</li>
+<li>不透明度降低到百分之50以下</li>
+<li>选中上两个图层，option+command+shift+e</li>
+<li>菜单-其他-high pass 半径为2</li>
+<li>图像-调整-去饱和度</li>
+<li>混合模式换为叠加</li>
+</ol>
 
       
       
@@ -307,7 +325,7 @@
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          博客完善计划
+          博客优化计划
         
       </div>
     </a>
@@ -341,7 +359,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6m4s%E8%BD%AC%E5%8C%96%E4%B8%BA%E5%8F%AF%E6%92%AD%E6%94%BEmp4%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">关于哔哩哔哩视频文件m4s转化为可播放mp4：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E4%B8%8D%E5%A5%BD%E7%9A%84%E7%BD%91%E5%9D%80%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD"><span class="toc-number">2.</span> <span class="toc-text">一些不好的网址视频下载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%85%88%E8%BF%9B%E5%85%A5%E6%89%80%E9%9C%80%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%EF%BC%8C%E4%BD%BF%E7%94%A8%E7%8C%AB%E6%8A%93-%E6%8A%93%E5%8F%96m3u8%E6%96%87%E4%BB%B6%E5%B9%B6%E8%BF%9B%E8%A1%8C%E8%A7%A3%E6%9E%90%EF%BC%8C%E5%BE%97%E5%88%B0%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%B0%E4%B9%8B%E5%90%8E%E5%8F%AF%E4%BB%A5%E8%BF%9B%E8%A1%8Cm3u8%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%B0%E6%9B%B4%E6%94%B9%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">1. 先进入所需下载视频，使用猫抓 抓取m3u8文件并进行解析，得到文件名称之后可以进行m3u8文件名称更改：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-cmd-%E8%BE%93%E5%85%A5%E4%BB%A5%E4%B8%8B%E4%BB%A3%E7%A0%81%EF%BC%9A"><span class="toc-number">2.2.</span> <span class="toc-text">2. cmd 输入以下代码：</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6m4s%E8%BD%AC%E5%8C%96%E4%B8%BA%E5%8F%AF%E6%92%AD%E6%94%BEmp4%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">关于哔哩哔哩视频文件m4s转化为可播放mp4：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E4%B8%8D%E5%A5%BD%E7%9A%84%E7%BD%91%E5%9D%80%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD"><span class="toc-number">2.</span> <span class="toc-text">一些不好的网址视频下载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%85%88%E8%BF%9B%E5%85%A5%E6%89%80%E9%9C%80%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%EF%BC%8C%E4%BD%BF%E7%94%A8%E7%8C%AB%E6%8A%93-%E6%8A%93%E5%8F%96m3u8%E6%96%87%E4%BB%B6%E5%B9%B6%E8%BF%9B%E8%A1%8C%E8%A7%A3%E6%9E%90%EF%BC%8C%E5%BE%97%E5%88%B0%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%B0%E4%B9%8B%E5%90%8E%E5%8F%AF%E4%BB%A5%E8%BF%9B%E8%A1%8Cm3u8%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%B0%E6%9B%B4%E6%94%B9%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">1. 先进入所需下载视频，使用猫抓 抓取m3u8文件并进行解析，得到文件名称之后可以进行m3u8文件名称更改：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-cmd-%E8%BE%93%E5%85%A5%E4%BB%A5%E4%B8%8B%E4%BB%A3%E7%A0%81%EF%BC%9A"><span class="toc-number">2.2.</span> <span class="toc-text">2. cmd 输入以下代码：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E5%8A%A8%E6%BC%AB%E5%8C%96"><span class="toc-number">3.</span> <span class="toc-text">图片动漫化</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -453,11 +471,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">参考</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">参考</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
